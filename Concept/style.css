@@ -1,0 +1,405 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-back {
+    background: rgba(29, 31, 30, 0.8)
+}
+
+.navbar-brand {
+    color: #f86e6e;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #f86e6e;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.navbar-toggler {
+    outline: none!important;
+    position: right!important;
+}
+
+.fas-fa-syringe {
+    position: relative;
+    margin-right: auto;
+}
+
+
+/*Hero Section*/
+
+#hero {
+    width: 100%;
+    height: 80vh;
+    background: url("img/1.jpeg") center;
+    background-size: cover;
+}
+
+#hero .container {
+    padding-top: 80px;
+}
+
+#hero::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80vh;
+}
+
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 56px;
+    color: #ffffff;
+}
+
+#hero h2 {
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: light;
+    letter-spacing: 0.5px;
+}
+
+.main-btn {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.main-btn:hover {
+    background: #11dbcf;
+    border: 2px solid #11dbcf;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/*Services*/
+
+.service {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    background: rgba(17, 219, 207, 0.8)
+}
+
+.service .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #ffffff;
+    border-radius: 50px;
+}
+
+.service .icon i {
+    font-size: 32px;
+    line-height: 1;
+    position: relative;
+    color: #47aef4;
+}
+
+.service h4 {
+    margin: 10px 0 15px 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.service p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+/*Section*/
+
+.about-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.about-heading {
+    text-transform: uppercase;
+}
+
+.about-heading-upper {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.about-heading-lower {
+    display: block;
+    font-size: 38px;
+    font-weight: light;
+}
+
+.bg-faded {
+    background: rgba(17, 219, 207, 0.8);
+}
+
+.about-button .btn-color {
+    background: #03a59a;
+    color: #fff;
+    font-weight: bold;
+}
+
+.about {
+    position: relative;
+}
+
+@media screen and (min-width:992px) {
+    .about .about-img {
+        width: 75%;
+        float: right;
+    }
+    .about .about-text {
+        left: 0;
+        width: 60%;
+        margin-top: 3rem;
+        position: absolute;
+    }
+    .about .about-text .about-button {
+        width: 100%;
+        left: 0;
+        position: absolute;
+        bottom: -2rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .about .about-text {
+        width: 45%;
+    }
+}
+
+
+/*end of section*/
+
+
+/*Pemeriksaan*/
+
+.camp {
+    background-color: #11dbcf;
+    padding-bottom: 0;
+}
+
+.camp h2 {
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.camp-grid {
+    margin-top: 65px;
+}
+
+.camp .row {
+    margin: 0;
+}
+
+.camp-grid .row>div {
+    padding: 0;
+}
+
+.camp-grid .row>div .card img {
+    width: 100%;
+}
+
+.camp-grid .row>div .card .camp-text {
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.camp-grid .row>div.card .camp-text>div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.camp-grid .row>div .card .camp-text .card-title {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.camp-grid .row>div .card .camp-text .card-text {
+    color: #ffffff;
+    opacity: 75%;
+    padding: 0 45px;
+}
+
+.camp-grid .row>div .card:hover .camp-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*end pemeriksaan*/
+
+
+/*Team*/
+
+.team {
+    background: #ffffff;
+}
+
+.team .section-tittle h2 {
+    content: "";
+    transform: translateX(-50%);
+    text-decoration: underline;
+}
+
+.team .member {
+    position: relative;
+    box-shadow: 1px 2px 15px rgba(17, 219, 207, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team .member .image {
+    overflow: hidden;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.team .member .image img {
+    transition: ease-in-out 0.3s;
+}
+
+.team .member:hover img {
+    transform: scale(1.1);
+}
+
+.team .member h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.team .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: bold;
+}
+
+.team .member span:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #b5b3ba;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team .member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+
+/*end of team*/
+
+
+/*Contact*/
+
+.contact-box {
+    color: #000000;
+    text-align: center;
+    box-shadow: rgba(17, 219, 207, 0.5);
+    padding: 20px 0 30px 0;
+    background: #11dbcf;
+}
+
+.contact-box i {
+    font-size: 32px;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+.contact-box h3 {
+    font-size: 20px;
+    color: #0000;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.contact-box p {
+    padding: 0;
+    line-height: 14px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.contact button {
+    background: #11dbcf;
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
+
+.contact button:hover {
+    background: #0a0a0a;
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+    font-size: 15px;
+    background: rgba(17, 219, 207, 0.8);
+}
+
+.footer .btn-back {
+    background: #fff;
+    color: #00d9ff;
+}
+
+.footer .text {
+    color: #000000;
+}
+
+.btn-social .i {
+    font-size: 22px;
+}
